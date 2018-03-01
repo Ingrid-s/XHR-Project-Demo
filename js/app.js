@@ -1,5 +1,5 @@
 
-/////Traer los elementos que se usaran 
+/////Traer los elementos que se usaran
 const form = document.getElementById('search-form'); //el form
 const searchField = document.getElementById ('search-keyword'); // imput de busqueda
 const responseContainer = document.getElementById('response-container'); // ul para desplegar contenido
@@ -33,7 +33,22 @@ function handleError() {
 // Guardar en const la estructura de datos que nos devuelve
 
 function addNews() {
+  for (let i=0; i<5; i++){
     const data = JSON.parse(this.responseText);
     console.log(data);
+const article = data.response.docs[i];
+const title = article.headline.main;
+const snippet = article.snippet;
+const multimedia = article.multimedia[0];
 
+let li = document.createElement('li');
+li.className = 'articleClass';
+li.innerText = snippet;
+
+//let photo = document.createElement('img');
+//photo.setAttribute(src,imagen);
+
+responseContainer.appendChild(li);
+  }
 }
+//data[0].multimedia);

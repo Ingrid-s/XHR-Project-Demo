@@ -3,4 +3,6 @@ header{
   height: 15rem;
   padding: 2rem;
 }
-
+#submit-btn{
+  background-color: rgba(206,133,242,.05);
+}
