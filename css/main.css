@@ -1,0 +1,8 @@
+header{
+  background-color: rgba(0, 217, 255, 0.616);
+  height: 15rem;
+  padding: 2rem;
+}
+#submit-btn{
+  background-color: rgba(206,133,242,.05);
+}
