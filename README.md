@@ -7,7 +7,29 @@
 
 ## PSEUDOCÓDIGO
 
-Para este proyecto se tomo la decisión en squad de realizar una red social de gamers, ya que al analizar la información que buscamos vimos que no hay muchas redes para esta temática, por lo que nos decidimos a realizarla.
+1 Registrarse en NYTimes  Developers
+2 Crear repositorio con archivos HTML,CSS, AP.JS
+3 Traer del html
+       3.1 form
+       3.2 search
+       3.3 container
+4 Agregar evento
+        4.1 llamado a la función API
+5 Definir función de API
+        5.1 Crear el objeto, parsearlo a JSON
+        5.2 Hacer petición (open())
+        5.3 Configuración de manejadores:
+            .onload
+            .onerror
+        5.4 Llamar a la función send ();
+6 Definir función error
+7 Definir función caso correcto
+        7.1 traer respuesta (JSON)
+8 Regresar vía DOM (crear los elementos dinámicos)
+9
+10....
+
+
 
 
 
